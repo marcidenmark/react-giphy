@@ -12,6 +12,7 @@
   flex-direction: column;
 
 //component form-search will be the input
+//  //form-control style comes from bootstrap
   .form-search {
     padding: 60px 60px 60px 120px;
     border: none;
@@ -21,7 +22,6 @@
       box-shadow: none;
     }
   }
-  //form-control style comes from bootstrap
 // to dispaly a magnifying glass on the left of the input
   &:before {
     content: '\F002';

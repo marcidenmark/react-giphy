@@ -5,9 +5,5 @@ import '../assets/stylesheets/application.scss';
 import App from './components/app.jsx';
 
 const root = document.getElementById('root');
-if (root) {
-	ReactDom.render(
-		<App />,
-		root);
-}
+	if (root) { ReactDom.render( <App />, root); }
 
