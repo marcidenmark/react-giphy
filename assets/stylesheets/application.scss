@@ -3,12 +3,15 @@
   height: 100vh;
 }
 
+
+// Two main components-- .left-scene and .right-scene
 .left-scene {
   flex: 0 0 60%;
   position: sticky;
   display: flex;
   flex-direction: column;
 
+//component form-search will be the input
   .form-search {
     padding: 60px 60px 60px 120px;
     border: none;
@@ -18,7 +21,8 @@
       box-shadow: none;
     }
   }
-
+  //form-control style comes from bootstrap
+// to dispaly a magnifying glass on the left of the input
   &:before {
     content: '\F002';
     position: absolute;
@@ -48,12 +52,12 @@
   flex: 0 0 40%;
   background-color: #ecf0f1;
   overflow: scroll;
-
+// the list will be an array
   .gif-list {
     column-count: 2;
     column-gap: 5px;
     padding: 5px;
-
+//the gif witll be what displays
     .gif {
       width: 100%;
       margin: 5px;
@@ -62,7 +66,11 @@
   }
 }
 
+
 //(below css for the indexWithClass and props.jsx files)
+// body {
+//   font-family: Helvetica;
+// }
 // .clicked {
 // 	color: red;
 // }

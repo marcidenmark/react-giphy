@@ -16,7 +16,7 @@ if (root) {
 }
 
 //
-//starter code
+// starter code
 // const Hello = props => <div>Hello, {props.name}</div>;
 // const root = document.getElementById('root');
 // if (root) {
