@@ -7,6 +7,7 @@ class GifList extends Component {
 			return <Gif id={gif.id} key={gif.id} />
 		})
 	}
+	//gif id coming from gif.jsx
 
 	render() {
 		return (
