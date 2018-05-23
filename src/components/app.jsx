@@ -16,20 +16,13 @@ class App extends Component {
 
 		this.search("");
 	}
-//giphy api key
-//
-// Search with options using callback
-// giphy.search({
-//     q: 'pokemon',
-//     rating: 'g'
-// }, function (err, res) {
-//     // Res contains gif data!
-// });
+	//giphy api key
 	search = (query) => {
-			giphy ('rcDQ1uxkajNgxkTx0XNs8ZOTJwdQ4bEF').search({
-			    q: query,
-			    rating: 'g'
-		},  (error, result) => {
+		giphy ('rcDQ1uxkajNgxkTx0XNs8ZOTJwdQ4bEF').search({
+			q: query,
+			rating: 'g'
+		},
+		(error, result) => {
 			this.setState({
 				gifs:result.data
 			})

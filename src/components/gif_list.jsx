@@ -7,7 +7,6 @@ class GifList extends Component {
 			return <Gif id={gif.id} key={gif.id} />
 		})
 	}
-	//gif id coming from gif.jsx
 
 	render() {
 		return (
@@ -18,6 +17,5 @@ class GifList extends Component {
 	}
 
 }
-// we need to make an array and pass the gif component in
 
 export default GifList;
