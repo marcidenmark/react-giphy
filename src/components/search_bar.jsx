@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
 	handleUpdate = (event) => {
-		console.log(event.target.value);
+		// console.log(event.target.value);
 		this.props.searchFunction(event.target.value);
 	}
 
@@ -13,6 +13,7 @@ class SearchBar extends Component {
 				type="text"
 				className="form-control form-search"
 				onChange={this.handleUpdate}
+				placeholder="Search Giphies!"
 			/>
 		);
 	}
@@ -20,3 +21,6 @@ class SearchBar extends Component {
 }
 
 export default SearchBar;
+
+
+				// value="search for a giphy!"

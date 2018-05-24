@@ -6,7 +6,7 @@
 
 // Two main components-- .left-scene and .right-scene
 .left-scene {
-  flex: 0 0 60%;
+  flex:  50%;
   position: sticky;
   display: flex;
   flex-direction: column;
@@ -14,9 +14,11 @@
 //component form-search will be the input
 //  //form-control style comes from bootstrap
   .form-search {
-    padding: 60px 60px 60px 120px;
+  	background-color: #F7EF81;
+    padding: 60px 30px 60px 80px;
     border: none;
-    font-size: 2.6em;
+    font-size: 15px;
+    font-style: italic;
     box-shadow: none;
     &:focus {
       box-shadow: none;
@@ -26,10 +28,10 @@
   &:before {
     content: '\F002';
     position: absolute;
-    top: 35px;
-    left: 60px;
+    top: 40px;
+    left: 30px;
     font-family: FontAwesome;
-    font-size: 2.6em;
+    font-size: 2em;
     opacity: 0.4;
   }
 
@@ -38,7 +40,7 @@
     display: flex;
     flex-grow: 1;
     height: calc(100vh - 232px);
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.22'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color:#D9E5D6;
 
     .gif {
       max-width: 80%;
@@ -49,15 +51,15 @@
 }
 
 .right-scene {
-  flex: 0 0 40%;
-  background-color: #ecf0f1;
+  flex: 0 0 50%;
+  background-color: #EDDEA4;
   overflow: scroll;
 // the list will be an array
   .gif-list {
     column-count: 2;
     column-gap: 5px;
     padding: 5px;
-//the gif witll be what displays
+//the gif will be what displays
     .gif {
       width: 100%;
       margin: 5px;
