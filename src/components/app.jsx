@@ -4,20 +4,16 @@ import Gif from './gif';
 import GifList from './gif_list';
 import giphy from 'giphy-api';
 
-
 class App extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			gifs: [],
 			selectedGifId: "K5wOAFFgSS1Dq"
 		};
-
 		this.search("");
 	}
 	//giphy api key
-	//
 	search = (query) => {
 		giphy ({apiKey:'rcDQ1uxkajNgxkTx0XNs8ZOTJwdQ4bEF', https:true})
 		.search({
@@ -26,8 +22,8 @@ class App extends Component {
 			limit:20
 		},
 		(error, result) => {
-			this.setState({
-				gifs:result.data
+		this.setState({
+			gifs:result.data
 			});
 		});
 	}
