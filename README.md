@@ -1,4 +1,4 @@
-# React Giphy App
+# React Giphy App built with React
 ## This fun app makes use of a giphy api.
 A user can search for their favorite tv show and watch some giphies.
 
