@@ -1,6 +1,6 @@
 # React Giphy App
 ## This fun app makes use of a giphy api.
-- A user can search for their favorite tv show and watch some giphies.
+A user can search for their favorite tv show and watch some giphies.
 
 ### Technologies used:
 - React
