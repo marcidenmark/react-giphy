@@ -5,6 +5,7 @@ class SearchBar extends Component {
 		// console.log(event.target.value);
 		this.props.searchFunction(event.target.value);
 	}
+	// line 6, searchFunction is defined in app component (the parent)
 
 
 	render() {

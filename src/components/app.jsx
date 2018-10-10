@@ -13,7 +13,12 @@ class App extends Component {
 		};
 		this.search("");
 	}
+	// note this.search called above before line 19
 	//giphy api key
+	//The search function was written on the giphy docs. (line 22)
+	//after defining the search, you set the state in line 28
+	//Note the arrow function use!
+	//Then we use the function on linve 52, 
 	search = (query) => {
 		giphy ({apiKey:'rcDQ1uxkajNgxkTx0XNs8ZOTJwdQ4bEF', https:true})
 		.search({
